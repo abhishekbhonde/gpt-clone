@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const converstationSchema = new mongoose.model({
+const converstationSchema = new mongoose.Schema({
     userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"User",

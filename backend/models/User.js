@@ -16,7 +16,6 @@ const UserSchema = new mongoose.Schema({
     },
     openApiKey:{
         type:String,
-        default: ''
     },
     preferences: {
     theme: { type: String, default: 'dark' },

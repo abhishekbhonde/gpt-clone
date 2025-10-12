@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const messageSchema = new mongoose.model({
+const messageSchema = new mongoose.Schema({
     conversationId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"Conversation",
@@ -17,7 +17,7 @@ const messageSchema = new mongoose.model({
     },
     token:{
         type:Number,
-        required:true
+        default:0
     }
 })
 
